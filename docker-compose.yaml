@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+  node-app:
+    build: .
+    ports:
+      - 3000:3000
+  redis:
+    container_name: redis-galih-mongodb
+    image: redis:6
+    ports:
+      - 6379:6379
